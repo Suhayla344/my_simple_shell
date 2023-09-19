@@ -1,11 +1,11 @@
-#include  <stdio.h>
-#include <unistd.h>
+#include  "shell.h"
 
-int main(void)
+int main(int ac, char **av)
 {
 	int v = 7;
 
 	pid_t pross_id = getppid();
 
-	printf("PID is : %u", pross_id);
+	printf("PID is : %u\n", pross_id);
+	my_printf("blaa bla\n");
 }
